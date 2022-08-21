@@ -4,7 +4,7 @@
 Author: fuutianyii
 Date: 2022-08-21 18:44:07
 LastEditors: fuutianyii
-LastEditTime: 2022-08-21 23:51:28
+LastEditTime: 2022-08-21 23:55:00
 github: https://github.com/fuutianyii
 mail: fuutianyii@gmail.com
 QQ: 1587873181
@@ -83,7 +83,7 @@ if __name__ == "__main__":
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>悲哀的工具人</title>
+    <title>悲哀的工具人发布的测试</title>
     <style>
         #main{
             margin: auto;
