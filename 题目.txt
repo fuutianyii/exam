@@ -127,7 +127,7 @@ zip2john test.zip
 自行获取服务器上的flag.zip将密码提交
 123123
 wget获取网站
-wget 
+wget
 wget指定写入文件
 wget -O
 curl请求web服务器
@@ -155,11 +155,11 @@ crunch 6 6 -t pass^^ -o password.txt
 将文件大小提交
 7623
 生成六位小写字母密码，其中前四位为pass
-crunch 6 6 -t pass@@ -o password.txt 
+crunch 6 6 -t pass@@ -o password.txt
 将文件大小提交
 4732
 生成pass01-pass99所有数字组合
-crunch 6 6 -t pass%% -o password.txt 
+crunch 6 6 -t pass%% -o password.txt
 将文件大小提交
 700
 制作6位数字字典字符集为012345689
