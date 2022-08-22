@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>悲哀的工具人发布的测试</title>
+    <style>
+        #main{
+            margin: auto;
+            width: 700px;
+        }
+        .input{
+            font-size:20px;
+            /* 设置输入框中字体的大小 */
+            height:40px; 
+            width: 100%;
+            /* 设置输入框的高度 */
+            border-radius:4px; 
+            /* 设置输入框的圆角的大小 */
+            border:1px solid #c8cccf;
+            /* 设置输入框边框的粗细和颜色 */
+            color:#986655; 
+            /* 设置输入框中文字的颜色 */
+            outline:0; 
+            /* 将输入框点击的时候出现的边框去掉 */
+            text-align:left; 
+            /* 设置输入框中文字的位置 */
+            padding-left: 10px;
+            display:block; 
+            /* 将输入框设置为块级元素 */
+            cursor: pointer;
+            box-shadow: 2px 2px 5px 1px #ccc;  
+        }
+
+        .right{
+            color:green; 
+        }
+    </style>
+    <script src="MD5.js"></script>
+</head>
+<body>
+    <div id="main">
+        <h2>score:<span id="score">0</span></h2>
+        <h2>程序新鲜出炉，自行备份，一切问题与熬夜敲代码的工具人无关！</h2>
+        1.nmap扫描操作系统
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="1">
+<br>2.将结果提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="2">
+<br>3.nmap详细扫描服务版本
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="3">
+<br>4.结果第五行,第四个单词
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="4">
+<br>5.nmap指定22端口扫描
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="5">
+<br>6.22端口开放状态
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="6">
+<br>7.nmap进行tcp扫描
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="7">
+<br>8.78端口的开放状态
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="8">
+<br>9.nmap禁止dns反向解析
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="9">
+<br>10.66端口开放的服务
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="10">
+<br>11.nmap设置最大时序
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="11">
+<br>12.8081端口服务版本
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="12">
+<br>13.nmap圣诞树扫描
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="13">
+<br>14.22端口一行open后第一个单词
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="14">
+<br>15.nmap半开放式扫描
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="15">
+<br>16.最大的端口是哪个
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="16">
+<br>17.nmap使用默认脚本扫描服务
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="17">
+<br>18.ftp-syst:下一行内容
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="18">
+<br>19.nmap指定格式输出
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="19">
+<br>20.生成了几种格式
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="20">
+<br>21.nmap全面扫描
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="21">
+<br>22.8080端口下一行内容
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="22">
+<br>23.nmap进行udp扫描
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="23">
+<br>24.发现了哪些端口（端口间以，分隔）
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="24">
+<br>25.使用arp-scan进行主机发现，扫描靶机所在网段
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="25">
+<br>26.靶机MAC地址提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="26">
+<br>27.使用weevely生成木马，密码sbzcj，生成路径为/root目录，木马名为shell.php
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="27">
+<br>28.回显第一行前两个单词
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="28">
+<br>29.echo不换行输出
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="29">
+<br>30.tar解压
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="30">
+<br>31.使用fping进行主机发现，扫描靶机所在网段，仅显示存活ip
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="31">
+<br>32.回显最后一行第一个单词
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="32">
+<br>33.添加用户
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="33">
+<br>34.从根目录下查找文件位置
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="34">
+<br>35.查看当前目录详细信息
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="35">
+<br>36.yun安装程序
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="36">
+<br>37.nbtscan扫描靶机所在网段
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="37">
+<br>38.复制
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="38">
+<br>39.windows查看a
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="39">
+<br>40.root权限执行ipconfig
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="40">
+<br>41.查看/etc/shadow的最后两行
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="41">
+<br>42.强制删除
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="42">
+<br>43.使用nc监听本地8080端口，详细显示过程
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="43">
+<br>44.将回显提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="44">
+<br>45.使用bash建立与1.1.1.1的8080端口的连接
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="45">
+<br>46.将第一行回显提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="46">
+<br>47.使用nc连接1.1.1.1的8080端口
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="47">
+<br>48.将回显提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="48">
+<br>49.使用nc开辟一个8080端口的后门
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="49">
+<br>50.将回显提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="50">
+<br>51.xprobe2扫描端口开放状态
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="51">
+<br>52.windows进入注册表
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="52">
+<br>53.xprobe2UDP扫描
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="53">
+<br>54./var/www/html/1.txt内容
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="54">
+<br>55.计算xxx.txt的MD5值（内容为空）
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="55">
+<br>56.将回显提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="56">
+<br>57.dirb扫描网站
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="57">
+<br>58.将第一行的第一个单词提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="58">
+<br>59.nikto扫描网站
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="59">
+<br>60.将第一行的第一个单词提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="60">
+<br>61.使用rar2john 提取rar的密文
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="61">
+<br>62.将rar2john位置提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="62">
+<br>63.使用zip2john提取zip的密文
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="63">
+<br>64.自行获取服务器上的flag.zip将密码提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="64">
+<br>65.wget获取网站
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="65">
+<br>66.wget指定写入文件
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="66">
+<br>67.curl请求web服务器
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="67">
+<br>68.curl指定写入文件
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="68">
+<br>69.使用find查找flag目录
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="69">
+<br>70.将位置提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="70">
+<br>71.使用grep查找flag目录下的flag
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="71">
+<br>72.将flag值提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="72">
+<br>73.查看进程
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="73">
+<br>74.将pid为52983的CMD提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="74">
+<br>75.强行终止进程
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="75">
+<br>76.查看kill的帮助文档
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="76">
+<br>77.生成六位密码，其中前四位为pass，后二位为特殊字符
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="77">
+<br>78.将文件大小提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="78">
+<br>79.生成六位小写字母密码，其中前四位为pass
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="79">
+<br>80.将文件大小提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="80">
+<br>81.生成pass01-pass99所有数字组合
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="81">
+<br>82.将文件大小提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="82">
+<br>83.制作6位数字字典字符集为012345689
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="83">
+<br>84.将第150行的密码提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="84">
+<br>85.生成一个五位大写英文字母字典，文件名为password.txt
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="85">
+<br>86.将第10行的密码提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="86">
+<br>87.使用hashcat破解6c63468b368244d24fbb57b7df14ed86，使用上题目生成的密码字典
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="87">
+<br>88.将结果提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="88">
+<br>89.使用hashcat破解9b030e9b375b34f25661841f88f0c07a，密码是三个大写字母+数字+两个大写字母
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="89">
+<br>90.将结果提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="90">
+<br>91.生成encode_me.txt的md5密文，文件内容为“123456 ”（引号不用输入）
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="91">
+<br>92.将密文提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="92">
+<br>93.md5sum加密上题字符串
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="93">
+<br>94.将生成加密字符串的快捷键提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="94">
+<br>95.windows查看电脑详细信息
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="95">
+<br>96.将第一个信息名提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="96">
+<br>97.windows查看电脑网络详情
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="97">
+<br>98.将第一行提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="98">
+<br>99.windows打开组策略编辑器
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="99">
+<br>100.将组策略全名提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="100">
+<br>
+    </div>
+</body>
+<script>
+(function(){
+    var answerlist=['80ad1885cbb9fb65f6c9d271b2997209', '160ae498e9a932b8ed8346e47d468c0d', 'a00273f47b8c3270dc3f412cc30f55ba', '021321e8c168ba3ae39ce3a2e7b3ec87', 'fd02ed847a685fff21a7f0901b6d3034', '7cef8a734855777c2a9d0caf42666e69', 'c364d2b78462f74df56b008f85c50e1a', '349e686330723975502e9ef4f939a5ac', 'd83c89d6c4a83dfd248f94e3b40109c1', '1727a6d6e73469c3379a75b0574c9609', '6574e062b5adf315aa5b7f56a4abf736', '4aa8949ac69d9f65981fe1148285f049', '6f881f3e52f3e82c028211f365dafac9', 'dce4a640a8b606a2290c35b8d8d1e9d6', '21e2c8c1b01456505b84108b0ef003c7', 'c3daba8ba04565423e12eb8cb6237b46', '2003cc45b156ca38d1d2c1f642d01825', '95bea25a076e8f1073b1d666e804ce88', 'd88f4ffc9d36f8d86748ec77bfaa109e', 'eccbc87e4b5ce2fe28308fd9f2a7baf3', 'f445896939682cc50ca9bfa1abb2406d', '2f6b4199ec57152a57f61be20731367c', '418dd5e1efff41454260710faa2c3fe3', '4e4152871aa1a4af5c9d562d0c4e776e', '0faa5117781a2f9ec6f01eca8cdcc7dd', '926022b64d300dd5795b3d1ad64dfed4', '25faad0a73e18df6ac190dfcad85ac15', 'b444e9a131c9b14020f25fe4286b775a', '340dc0dd01a81a988e9ca6601ef893c5', '62d29b3d7f68adf9ffaeb159eccf6ae3', 'fd65d566968d52dc6471981dfc9fee7d', '7d6fe0dd606232f7155fdeae2ea620a9', '2fff73ee83a2bd3ee6e95350b9607eb9', '31a5ef4fb4870b839754e16cf8d3c894', '29359c4aedf69894b16029567c9d879c', 'f597d86cd8b9c9334592b3fe1b79c832', 'c374f007420c601f71b6dfca1063dc07', '9c95319bf274672d6eae7eb97c3dfda5', '4697cdb86fa5a340cb773b29202e09ca', '2940d39280e868a62009b3260bd47b28', '7231708db1753c260889b9876ffadf5f', '373d5cc730dd449760c437daf3d5a6d5', '07d886ba06d542ea85a7673e6fe97a8c', 'd5bc03a78120fcf009895a6794762ea3', 'ab4d567e34698211b1cf958160bf0768', '3ef2aff18f49832010077227bbf4b518', '965d1aff76991babfe7001c70f124f3b', 'd4f8cfa83b0cbecda65d256bf64fb638', 'a458eed6399c5a2f70192787a19206c4', 'd5bc03a78120fcf009895a6794762ea3', 'cdcbf243a5f81a775f8cc92a0a80ecf3', 'b1444fb0c07653567ad325aa25d4e37a', '1c2e66ea7d86babdecb889c6cd68386c', '766a2ee5019252f11e211265f970a922', 'd221083da510eef1e63966710ce9ad7b', 'b279558adde9f3f165b3eeeca4e46453', '5d11c7e508cfd2efc417d25dae90f7eb', '86b6f02263cf6b4364b093c90fd5661d', '4c6c309f800f2d2a1ea94cd78281fdb0', '21734971ae2b466a7e158c688ca8fdfb', 'a5bf2f37bf8b2812008acfe8ec2ff9eb', '45d860b2fc11ee35a0cfa1a2b16c0ee6', 'af0dad28346557a4d2cfe4a70bdd1a0b', '4297f44b13955235245b2497399d7a93', 'af9d83836ecf1f49c598bcb1995b3c98', '142a3877bd73a07a8bef9af8e455af65', '6cdb6a1a13460bc4db91bf215df86260', '1300731a9fe3a1d8e6d81487e924661b', '4698cb2164ab85cc82872dd554032bb6', 'e618d8d40de122f763b4212750fe0d56', '37ccdba8b5efc5913642cdadf558ab92', '4297f44b13955235245b2497399d7a93', '8812c36aa5ae336c2a77bf63211d899a', '5183ac5c2ccb3a4deade1773c22de657', 'c71990cc0ea8ec18eb3bbedfb129a52a', '534735884d341071762ede7af01c53e8', '1903d9fc2495fd2bd465871732ec24b9', '477bdb55b231264bb53a7942fd84254d', 'fd2d56029116faccf289682a2072a63f', 'fd1d83de2517a02d4e221ede9a681432', 'bb39e3a2f0c2598065ca4b7357a0fd71', 'e5841df2166dd424a57127423d276bbe', '64000b9c097721a4a83f25eee316c4b3', 'eecca5b6365d9607ee5a9d336962c534', '5068306c7946305ceede860f21a6ed13', 'cceaf67ba0f276aca34338cf6b411b67', 'f03b2005433cf047c63023e1c82ced25', 'd2315ae32ca4b71b8597d10fa1088387', 'b986e71bc033096c0da93112fea485cb', '9b030e9b375b34f25661841f88f0c07a', '6b14645911ebf5bc3e281a32492873d2', '36f49a9edabb364ccdab7b217148680e', 'afa1d412b30254c973985a2773fb8854', 'd8a519bfb45ade80145cf7b80af2580d', '5fb4780e00b965f8454ef28bc61c0605', '6707667676471cf7904609451060df21', 'acae4cc666ab060797abb92f02e94327', 'd32f16c98431382f268f38eda812547e', '5259042001e99b7e2059c38b857c8630', 'ea0454c532d53179e0572a1da1ec36df']
+    for(var i = 0; i < localStorage.length; i++) {
+        input=document.getElementById(localStorage.key(i))
+        if (md5(localStorage.getItem(localStorage.key(i)))==answerlist[localStorage.key(i)-1])
+        {
+            document.getElementById("score").innerText=Number(document.getElementById("score").innerText)+1
+            input.className="input right"
+            input.value="绝密答案"
+            input.disabled=true
+        }
+    }            
+})()
+// 按下enter键，发送请求，回车键的键值为13
+function press_enter(e){
+    var answerlist=['80ad1885cbb9fb65f6c9d271b2997209', '160ae498e9a932b8ed8346e47d468c0d', 'a00273f47b8c3270dc3f412cc30f55ba', '021321e8c168ba3ae39ce3a2e7b3ec87', 'fd02ed847a685fff21a7f0901b6d3034', '7cef8a734855777c2a9d0caf42666e69', 'c364d2b78462f74df56b008f85c50e1a', '349e686330723975502e9ef4f939a5ac', 'd83c89d6c4a83dfd248f94e3b40109c1', '1727a6d6e73469c3379a75b0574c9609', '6574e062b5adf315aa5b7f56a4abf736', '4aa8949ac69d9f65981fe1148285f049', '6f881f3e52f3e82c028211f365dafac9', 'dce4a640a8b606a2290c35b8d8d1e9d6', '21e2c8c1b01456505b84108b0ef003c7', 'c3daba8ba04565423e12eb8cb6237b46', '2003cc45b156ca38d1d2c1f642d01825', '95bea25a076e8f1073b1d666e804ce88', 'd88f4ffc9d36f8d86748ec77bfaa109e', 'eccbc87e4b5ce2fe28308fd9f2a7baf3', 'f445896939682cc50ca9bfa1abb2406d', '2f6b4199ec57152a57f61be20731367c', '418dd5e1efff41454260710faa2c3fe3', '4e4152871aa1a4af5c9d562d0c4e776e', '0faa5117781a2f9ec6f01eca8cdcc7dd', '926022b64d300dd5795b3d1ad64dfed4', '25faad0a73e18df6ac190dfcad85ac15', 'b444e9a131c9b14020f25fe4286b775a', '340dc0dd01a81a988e9ca6601ef893c5', '62d29b3d7f68adf9ffaeb159eccf6ae3', 'fd65d566968d52dc6471981dfc9fee7d', '7d6fe0dd606232f7155fdeae2ea620a9', '2fff73ee83a2bd3ee6e95350b9607eb9', '31a5ef4fb4870b839754e16cf8d3c894', '29359c4aedf69894b16029567c9d879c', 'f597d86cd8b9c9334592b3fe1b79c832', 'c374f007420c601f71b6dfca1063dc07', '9c95319bf274672d6eae7eb97c3dfda5', '4697cdb86fa5a340cb773b29202e09ca', '2940d39280e868a62009b3260bd47b28', '7231708db1753c260889b9876ffadf5f', '373d5cc730dd449760c437daf3d5a6d5', '07d886ba06d542ea85a7673e6fe97a8c', 'd5bc03a78120fcf009895a6794762ea3', 'ab4d567e34698211b1cf958160bf0768', '3ef2aff18f49832010077227bbf4b518', '965d1aff76991babfe7001c70f124f3b', 'd4f8cfa83b0cbecda65d256bf64fb638', 'a458eed6399c5a2f70192787a19206c4', 'd5bc03a78120fcf009895a6794762ea3', 'cdcbf243a5f81a775f8cc92a0a80ecf3', 'b1444fb0c07653567ad325aa25d4e37a', '1c2e66ea7d86babdecb889c6cd68386c', '766a2ee5019252f11e211265f970a922', 'd221083da510eef1e63966710ce9ad7b', 'b279558adde9f3f165b3eeeca4e46453', '5d11c7e508cfd2efc417d25dae90f7eb', '86b6f02263cf6b4364b093c90fd5661d', '4c6c309f800f2d2a1ea94cd78281fdb0', '21734971ae2b466a7e158c688ca8fdfb', 'a5bf2f37bf8b2812008acfe8ec2ff9eb', '45d860b2fc11ee35a0cfa1a2b16c0ee6', 'af0dad28346557a4d2cfe4a70bdd1a0b', '4297f44b13955235245b2497399d7a93', 'af9d83836ecf1f49c598bcb1995b3c98', '142a3877bd73a07a8bef9af8e455af65', '6cdb6a1a13460bc4db91bf215df86260', '1300731a9fe3a1d8e6d81487e924661b', '4698cb2164ab85cc82872dd554032bb6', 'e618d8d40de122f763b4212750fe0d56', '37ccdba8b5efc5913642cdadf558ab92', '4297f44b13955235245b2497399d7a93', '8812c36aa5ae336c2a77bf63211d899a', '5183ac5c2ccb3a4deade1773c22de657', 'c71990cc0ea8ec18eb3bbedfb129a52a', '534735884d341071762ede7af01c53e8', '1903d9fc2495fd2bd465871732ec24b9', '477bdb55b231264bb53a7942fd84254d', 'fd2d56029116faccf289682a2072a63f', 'fd1d83de2517a02d4e221ede9a681432', 'bb39e3a2f0c2598065ca4b7357a0fd71', 'e5841df2166dd424a57127423d276bbe', '64000b9c097721a4a83f25eee316c4b3', 'eecca5b6365d9607ee5a9d336962c534', '5068306c7946305ceede860f21a6ed13', 'cceaf67ba0f276aca34338cf6b411b67', 'f03b2005433cf047c63023e1c82ced25', 'd2315ae32ca4b71b8597d10fa1088387', 'b986e71bc033096c0da93112fea485cb', '9b030e9b375b34f25661841f88f0c07a', '6b14645911ebf5bc3e281a32492873d2', '36f49a9edabb364ccdab7b217148680e', 'afa1d412b30254c973985a2773fb8854', 'd8a519bfb45ade80145cf7b80af2580d', '5fb4780e00b965f8454ef28bc61c0605', '6707667676471cf7904609451060df21', 'acae4cc666ab060797abb92f02e94327', 'd32f16c98431382f268f38eda812547e', '5259042001e99b7e2059c38b857c8630', 'ea0454c532d53179e0572a1da1ec36df']
+    var evt = window.event || e;
+    if (evt.keyCode == 13){
+        if (answerlist[e.target.id-1] == md5(e.target.value))
+        {
+            var input =document.getElementById(e.target.id)
+            input.className="input right"
+            document.getElementById("score").innerText=1+Number(document.getElementById("score").innerText)
+            localStorage.setItem(e.target.id,e.target.value);
+            document.getElementById(e.target.id).value="绝密答案"
+            input.disabled=true
+        }
+        else{
+            document.getElementById(e.target.id).value=""
+        }
+    }
+    }
+</script>
+</html>
