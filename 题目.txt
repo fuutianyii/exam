@@ -173,7 +173,7 @@ AAAAJ
 使用hashcat破解6c63468b368244d24fbb57b7df14ed86，使用上题目生成的密码字典
 hashcat  -a 0  6c63468b368244d24fbb57b7df14ed86  password.txt  --force
 将结果提交
-XYM_SB
+XYMSB
 使用hashcat破解9b030e9b375b34f25661841f88f0c07a，密码是三个大写字母+数字+两个大写字母
 hashcat -a 3 9b030e9b375b34f25661841f88f0c07a ?u?u?u?d?u?u --force
 将结果提交
