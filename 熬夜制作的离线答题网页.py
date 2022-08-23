@@ -4,7 +4,7 @@
 Author: fuutianyii
 Date: 2022-08-21 18:44:07
 LastEditors: fuutianyii
-LastEditTime: 2022-08-21 23:58:02
+LastEditTime: 2022-08-22 18:10:09
 github: https://github.com/fuutianyii
 mail: fuutianyii@gmail.com
 QQ: 1587873181
@@ -127,12 +127,14 @@ if __name__ == "__main__":
 </body>
 <script>
 (function(){
-    document.getElementById("score").innerText=localStorage.length
+    var answerlist="""+str(answerlist)+"""
     for(var i = 0; i < localStorage.length; i++) {
         input=document.getElementById(localStorage.key(i))
         if (md5(localStorage.getItem(localStorage.key(i)))==answerlist[localStorage.key(i)-1])
         {
-            input.value=localStorage.getItem(localStorage.key(i))
+            document.getElementById("score").innerText=Number(document.getElementById("score").innerText)+1
+            input.className="input right"
+            input.value="绝密答案"
             input.disabled=true
         }
     }            
@@ -145,11 +147,11 @@ function press_enter(e){
         if (answerlist[e.target.id-1] == md5(e.target.value))
         {
             var input =document.getElementById(e.target.id)
-            document.getElementById(e.target.id).value="绝密答案"
-            input.disabled=true
             input.className="input right"
             document.getElementById("score").innerText=1+Number(document.getElementById("score").innerText)
             localStorage.setItem(e.target.id,e.target.value);
+            document.getElementById(e.target.id).value="绝密答案"
+            input.disabled=true
         }
         else{
             document.getElementById(e.target.id).value=""
