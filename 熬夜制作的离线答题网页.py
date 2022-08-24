@@ -4,7 +4,7 @@
 Author: fuutianyii
 Date: 2022-08-21 18:44:07
 LastEditors: fuutianyii
-LastEditTime: 2022-08-22 18:10:09
+LastEditTime: 2022-08-24 10:25:59
 github: https://github.com/fuutianyii
 mail: fuutianyii@gmail.com
 QQ: 1587873181
@@ -121,6 +121,7 @@ if __name__ == "__main__":
 <body>
     <div id="main">
         <h2>score:<span id="score">0</span></h2>
+        <button value="清空" onclick="localStorage.clear(); location.reload()">清空</button>
         <h2>程序新鲜出炉，自行备份，一切问题与熬夜敲代码的工具人无关！</h2>
         """+input_code+"""
     </div>
