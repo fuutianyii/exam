@@ -4,7 +4,7 @@
 Author: fuutianyii
 Date: 2022-08-21 18:44:07
 LastEditors: fuutianyii
-LastEditTime: 2022-08-24 10:25:59
+LastEditTime: 2022-08-25 10:06:44
 github: https://github.com/fuutianyii
 mail: fuutianyii@gmail.com
 QQ: 1587873181
@@ -70,13 +70,13 @@ def make_input(exam_dict):
 
 
 if __name__ == "__main__":
-    exam_dict=arrange_data("题目.txt")
+    exam_dict=arrange_data("题目-python.txt")
     # print(len(exam_dict))
     (exam_dict,answerlist)=encode_data(exam_dict)
     # print(len(exam_dict))
     # print(answerlist)
     input_code=make_input(exam_dict)
-    f=open("测试.html","w",encoding="utf-8")
+    f=open("测试-python.html","w",encoding="utf-8")
     f.write("""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -122,7 +122,7 @@ if __name__ == "__main__":
     <div id="main">
         <h2>score:<span id="score">0</span></h2>
         <button value="清空" onclick="localStorage.clear(); location.reload()">清空</button>
-        <h2>程序新鲜出炉，自行备份，一切问题与熬夜敲代码的工具人无关！</h2>
+        <h2>自行备份，预防BUG！</h2>
         """+input_code+"""
     </div>
 </body>

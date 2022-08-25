@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>悲哀的工具人发布的测试</title>
+    <style>
+        #main{
+            margin: auto;
+            width: 700px;
+        }
+        .input{
+            font-size:20px;
+            /* 设置输入框中字体的大小 */
+            height:40px; 
+            width: 100%;
+            /* 设置输入框的高度 */
+            border-radius:4px; 
+            /* 设置输入框的圆角的大小 */
+            border:1px solid #c8cccf;
+            /* 设置输入框边框的粗细和颜色 */
+            color:#986655; 
+            /* 设置输入框中文字的颜色 */
+            outline:0; 
+            /* 将输入框点击的时候出现的边框去掉 */
+            text-align:left; 
+            /* 设置输入框中文字的位置 */
+            padding-left: 10px;
+            display:block; 
+            /* 将输入框设置为块级元素 */
+            cursor: pointer;
+            box-shadow: 2px 2px 5px 1px #ccc;  
+        }
+
+        .right{
+            color:green; 
+        }
+    </style>
+    <script src="MD5.js"></script>
+</head>
+<body>
+    <div id="main">
+        <h2>score:<span id="score">0</span></h2>
+        <button value="清空" onclick="localStorage.clear(); location.reload()">清空</button>
+        <h2>自行备份，预防BUG！</h2>
+        1.对目标服务器进行渗透测试，获取服务器存放临时文件目录下的python1.py,python2.py,python3.py下载，将python1.py的文件大小提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="1">
+<br>2.对目标服务器进行渗透测试，获取服务器存放临时文件目录下的python1.py,python2.py,python3.py下载，将python2.py的文件大小提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="2">
+<br>3.对目标服务器进行渗透测试，获取服务器存放临时文件目录下的python1.py,python2.py,python3.py下载，将python3.py的文件大小提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="3">
+<br>4.(1)flag1
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="4">
+<br>5.(1)flag2
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="5">
+<br>6.(1)flag3
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="6">
+<br>7.(1)flag4
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="7">
+<br>8.(1)flag5
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="8">
+<br>9.(1)flag6
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="9">
+<br>10.(1)flag7
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="10">
+<br>11.(1)flag8
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="11">
+<br>12.(1)flag9=flag5+flag6
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="12">
+<br>13.(2)flag10=flag1+flag2+flag3+flag4+flag5+flag6+flag7+flag8+flag9
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="13">
+<br>14.(2)flag1
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="14">
+<br>15.(2)flag2
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="15">
+<br>16.(2)flag3
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="16">
+<br>17.(2)flag4
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="17">
+<br>18.(2)flag5
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="18">
+<br>19.(2)flag6
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="19">
+<br>20.(2)flag7
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="20">
+<br>21.(2)flag8
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="21">
+<br>22.(2)flag9
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="22">
+<br>23.(2)flag10
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="23">
+<br>24.(2)flag11
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="24">
+<br>25.(2)flag12
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="25">
+<br>26.(2)flag13=flag1+flag2+flag3
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="26">
+<br>27.(2)flag15=flag5+flag6+flag7
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="27">
+<br>28.(2)flag16=flag1+flag2+flag3+flag4+flag5+flag6+flag7+flag8+flag9+flag10+flag11+flag12
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="28">
+<br>29.(3)FLAG1
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="29">
+<br>30.(3)FLAG2
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="30">
+<br>31.(3)FLAG3
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="31">
+<br>32.(3)FLAG4
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="32">
+<br>33.(3)FLAG5
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="33">
+<br>34.(3)FLAG6
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="34">
+<br>35.(3)FLAG7
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="35">
+<br>36.(3)FLAG8
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="36">
+<br>37.(3)FLAG9
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="37">
+<br>38.(3)FLAG10
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="38">
+<br>39.(4)获取172.17.169.138/local_file/下的0.txt-149.txt，合并文件内容，并将合并值加密为MD5值提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="39">
+<br>40.(4)已知txt是由1.py生成，尝试获取1.py原文，将原文的md5值提交
+<br><input type="text" class="input" onkeydown="press_enter(event);" id="40">
+<br>
+    </div>
+</body>
+<script>
+(function(){
+    var answerlist=['6081594975a764c8e3a691fa2b3a321d', 'f15eda31a2da646eea513b0f81a5414d', 'd860edd1dd83b36f02ce52bde626c653', '39258b0440baa146aeb94e9cc3a68cc9', 'b180e860a2a9deea961d1cdba245f0ac', '61f2529360aec54f5dc9804b842cf3fa', 'f701fee85540b78d08cb276d14953d58', '0d58cc69d4adc8630af99d2e07e5b5c0', '1cb6aa5ff54e4042b09b77cc32833495', '716f6b30598ba30945d84485e61c1027', '4abe77c201ff11663ccdf52fd6ecea86', 'd1b739b67d20064a5d12c6ca2d12b5a1', '5ecad3d46850d5d7bb7a17883ec451e1', '36bcbb801f5052739af8220c6ea51434', '4b12623d0839cacfa9fafb21e36f6ae4', 'b180e860a2a9deea961d1cdba245f0ac', 'f7531e2d0ea27233ce00b5f01c5bf335', 'f37f801adea753d69f245caa7f4b3371', '9086dfef163bc8c9747172fbcb84adbd', 'c9fab33e9458412c527c3fe8a13ee37d', '02135630689d07fc8309039e3f5e42e1', 'dd302f94682dbd2a114d63b0433602e0', 'b411bc68095e33f5c1e9ac287007d8e4', '492747daea0e0c63c660367fd95f44be', 'a956af09162870af6ce4ebe0f12ccaf8', '37e86f9712528c0629146fb334e3d07a', '41db9c0a5edb4626755837377b2f0188', 'b4cf72e3465b7673bf4862bfe5dc372a', '95023838634fb495b6422a548d9b021f', 'b180e860a2a9deea961d1cdba245f0ac', '0919fe44fdbbd233e5e2e8587006b7b2', '8e13ffc9fd9d6a6761231a764bdf106b', '722ad2d05ecf4868b00c5484b82fd808', '7e2f9f83a1f02d23ccadfe048766f0b2', '466b606bbef4e57f0f71c25bf744931f', '005a864766344e22ee8b595e0911f9e8', '9e3f4f69757d07f6a0d2af4f1f2a1103', '2ac737d240fc746cef37129b7569f08e', 'b426459637bbbd18c72603e5a464833e', '624e263b2677170b71e0ca86582dc1ff']
+    for(var i = 0; i < localStorage.length; i++) {
+        input=document.getElementById(localStorage.key(i))
+        if (md5(localStorage.getItem(localStorage.key(i)))==answerlist[localStorage.key(i)-1])
+        {
+            document.getElementById("score").innerText=Number(document.getElementById("score").innerText)+1
+            input.className="input right"
+            input.value="绝密答案"
+            input.disabled=true
+        }
+    }            
+})()
+// 按下enter键，发送请求，回车键的键值为13
+function press_enter(e){
+    var answerlist=['6081594975a764c8e3a691fa2b3a321d', 'f15eda31a2da646eea513b0f81a5414d', 'd860edd1dd83b36f02ce52bde626c653', '39258b0440baa146aeb94e9cc3a68cc9', 'b180e860a2a9deea961d1cdba245f0ac', '61f2529360aec54f5dc9804b842cf3fa', 'f701fee85540b78d08cb276d14953d58', '0d58cc69d4adc8630af99d2e07e5b5c0', '1cb6aa5ff54e4042b09b77cc32833495', '716f6b30598ba30945d84485e61c1027', '4abe77c201ff11663ccdf52fd6ecea86', 'd1b739b67d20064a5d12c6ca2d12b5a1', '5ecad3d46850d5d7bb7a17883ec451e1', '36bcbb801f5052739af8220c6ea51434', '4b12623d0839cacfa9fafb21e36f6ae4', 'b180e860a2a9deea961d1cdba245f0ac', 'f7531e2d0ea27233ce00b5f01c5bf335', 'f37f801adea753d69f245caa7f4b3371', '9086dfef163bc8c9747172fbcb84adbd', 'c9fab33e9458412c527c3fe8a13ee37d', '02135630689d07fc8309039e3f5e42e1', 'dd302f94682dbd2a114d63b0433602e0', 'b411bc68095e33f5c1e9ac287007d8e4', '492747daea0e0c63c660367fd95f44be', 'a956af09162870af6ce4ebe0f12ccaf8', '37e86f9712528c0629146fb334e3d07a', '41db9c0a5edb4626755837377b2f0188', 'b4cf72e3465b7673bf4862bfe5dc372a', '95023838634fb495b6422a548d9b021f', 'b180e860a2a9deea961d1cdba245f0ac', '0919fe44fdbbd233e5e2e8587006b7b2', '8e13ffc9fd9d6a6761231a764bdf106b', '722ad2d05ecf4868b00c5484b82fd808', '7e2f9f83a1f02d23ccadfe048766f0b2', '466b606bbef4e57f0f71c25bf744931f', '005a864766344e22ee8b595e0911f9e8', '9e3f4f69757d07f6a0d2af4f1f2a1103', '2ac737d240fc746cef37129b7569f08e', 'b426459637bbbd18c72603e5a464833e', '624e263b2677170b71e0ca86582dc1ff']
+    var evt = window.event || e;
+    if (evt.keyCode == 13){
+        if (answerlist[e.target.id-1] == md5(e.target.value))
+        {
+            var input =document.getElementById(e.target.id)
+            input.className="input right"
+            document.getElementById("score").innerText=1+Number(document.getElementById("score").innerText)
+            localStorage.setItem(e.target.id,e.target.value);
+            document.getElementById(e.target.id).value="绝密答案"
+            input.disabled=true
+        }
+        else{
+            document.getElementById(e.target.id).value=""
+        }
+    }
+    }
+</script>
+</html>

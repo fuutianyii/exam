@@ -1,0 +1,12 @@
+
+
+flag1=handle_client
+flag2=threading
+flag3=socket
+flag4=recv
+flag5=print(
+flag6=.start(
+flag7=close
+flag8=accept
+flag9=print(+.start(
+flag10=handle_client+threading+socket+recv+print(+.start(+close+accept+print(+.start(
